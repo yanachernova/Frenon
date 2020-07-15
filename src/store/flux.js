@@ -6,6 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             currentHotel: {},
             search: null,
             facebook_name: {},
+            google_name: {},
             mensajes: [],
             currentMensajes: {},
             date: [],
@@ -104,10 +105,23 @@ const getState = ({ getStore, getActions, setStore }) => {
                 })
                 sessionStorage.setItem("facebook_name", JSON.stringify(response))
             },
+            SaveDataGoogle: response => {
+                setStore({
+                    google_name: response
+                })
+                sessionStorage.setItem("google_name", JSON.stringify(response))
+            },
             GetFacebookData: () => {
                 if (sessionStorage.getItem("facebook_name")) {
                     setStore({
                         facebook_name: JSON.parse(sessionStorage.getItem("facebook_name"))
+                    })
+                }
+            },
+            GetGoogleData: () => {
+                if (sessionStorage.getItem("google_name")) {
+                    setStore({
+                        google_name: JSON.parse(sessionStorage.getItem("google_name"))
                     })
                 }
             }
