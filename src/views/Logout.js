@@ -36,26 +36,6 @@ const Logout = props => {
 
                 }
                 </div>
-                <div className="mt-3 ml-5 pl-5">
-                {JSON.stringify(store.google_name) === "{}" ?
-                    (
-                        <>
-                        <h1 style={{ marginLeft: "5rem" }}>Bienvenido,</h1>
-                            <h3 style={{ marginLeft: "5rem" }}>{store.google_name.name}</h3>
-                        </>
-                    )
-                    :
-                    (
-                        <>
-                        <Google />
-                            
-                        </>
-                    )
-
-
-                }
-
-            </div>
 
         </>
     )
