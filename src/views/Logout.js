@@ -3,14 +3,12 @@ import { Context } from '../store/appContext'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Facebook from '../components/Facebook';
-import Google from '../components/Google'
 
 
 const Logout = props => {
     const { store, actions } = useContext(Context)
     useEffect(() => {
         actions.GetFacebookData()
-        actions.GetGoogleData()
     }, [actions])
     return (
         <>
