@@ -87,7 +87,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 
             },
             GetCurrentHotel: async (item) => {
-                console.log(item)
                 setStore({
                     currentHotel: item
                 })
