@@ -43,6 +43,31 @@ When you’re ready to deploy to production, create a minified bundle with `npm 
 <img src='https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg' width='600' alt='npm start'>
 </p>
 
+It will create a directory called `my-app` inside the current folder.<br>
+Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+
+```
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+    └── setupTests.js
+```
+
+
 ## Install
 
 ```sh
@@ -54,6 +79,25 @@ npm install
 ```sh
 npm run start
 ```
+Runs the app in development mode.<br>
+104
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+105
+​
+106
+The page will automatically reload if you make changes to the code.<br>
+107
+You will see the build errors and lint warnings in the console.
+108
+​
+109
+<p align='center'>
+110
+<img src='https://cdn.jsdelivr.net/gh/marionebl/create-react-app@9f6282671c54f0874afd37a72f6689727b562498/screencast-error.svg' width='600' alt='Build errors'>
+111
+</p>
+112
+​
 
 ## Author
 
